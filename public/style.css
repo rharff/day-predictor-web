@@ -26,7 +26,7 @@ body {
 }
 
 #hero {
-    height: 80vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,7 +93,7 @@ body {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    min-height: 40px; /* Reserve space to prevent layout shift */
+    min-height: 40px;
 }
 
 #about {

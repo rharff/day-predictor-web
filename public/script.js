@@ -5,7 +5,6 @@ const funFactDiv = document.getElementById('fun-fact');
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
 predictBtn.addEventListener('click', async () => {
-    // Clear previous results immediately
     resultDiv.classList.remove('visible');
     funFactDiv.textContent = '';
 
@@ -15,11 +14,10 @@ predictBtn.addEventListener('click', async () => {
     
     const dayName = days[tomorrow.getDay()];
     
-    // Set the day name and make it visible
     resultDiv.textContent = `Tomorrow is ${dayName}.`;
     resultDiv.classList.add('visible');
 
-    const month = tomorrow.getMonth() + 1; // getMonth() is 0-indexed
+    const month = tomorrow.getMonth() + 1;
     const day = tomorrow.getDate();
 
     try {
